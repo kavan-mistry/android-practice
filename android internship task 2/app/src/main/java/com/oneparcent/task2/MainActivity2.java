@@ -47,12 +47,14 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(context, username, Toast.LENGTH_LONG).show();
-                Toast.makeText(context, password, Toast.LENGTH_LONG).show();
+                Toast.makeText(context, username, Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, password, Toast.LENGTH_SHORT).show();
 
-                if (user_name.equals(username) && pass_word.equals(password)) {
-                    Toast i = Toast.makeText(context,"right ID passwor", Toast.LENGTH_LONG);
-                    i.show();
+                if (user_name==username) {
+                    if (pass_word==password){
+                        Toast i = Toast.makeText(context,"right ID passwor", Toast.LENGTH_LONG);
+                        i.show();
+                    }
                 } else {
                     Toast t = Toast.makeText(context,"you are wrong",Toast.LENGTH_LONG);
                     t.show();

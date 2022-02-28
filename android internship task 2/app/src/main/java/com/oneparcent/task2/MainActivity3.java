@@ -53,6 +53,7 @@ public class MainActivity3 extends AppCompatActivity {
 
                 Intent i = new Intent(MainActivity3.this,MainActivity2.class);
                 startActivity(i);
+
             }
         });
 
